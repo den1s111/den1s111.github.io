@@ -21,6 +21,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            position: relative;
         }
         a {
             color: #e5e7eb;
@@ -39,16 +40,18 @@
         .scroll-arrow {
             position: absolute;
             bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 2em;
             animation: bounce 1.5s infinite;
             cursor: pointer;
         }
         @keyframes bounce {
             0%, 100% {
-                transform: translateY(0);
+                transform: translate(-50%, 0);
             }
             50% {
-                transform: translateY(10px);
+                transform: translate(-50%, 10px);
             }
         }
     </style>
