@@ -8,21 +8,69 @@
     <title>Denis Vera's Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "Söhne Mono", monospace, "Courier New";
+            background-color: #2B2926;
+            color: #f4f4f9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        a {
+            color: #e5e7eb;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #d1d5db;
+        }
+        .dedicatory {
+            font-size: 0.8em;
+            font-style: italic;
+            margin-top: 30px;
+            padding: 10px;
+            border-top: 2px solid #e5e7eb;
+        }
+        .scroll-arrow {
+            position: absolute;
+            bottom: 20px;
+            font-size: 2em;
+            animation: bounce 1.5s infinite;
+            cursor: pointer;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="intro">
-            <div class="name">Denis Vera Iriyari</div>
-            <div class="university">Universidad Politécnica de Catalunya</div>
-            <div class="degree">Computer Engineering</div>
-            <div class="links">
-                <a href="mailto:byvera19@gmail.com?subject=Inquiry" target="_blank">Email</a> · 
-                <a href="" target="_blank">CV</a> · 
-                <a href="https://github.com/den1s111" target="_blank">GitHub</a> · 
-                <a href="https://www.linkedin.com/in/denis-vera-iriyari-376300229/" target="_blank">LinkedIn</a>
-            </div>
+    <div>
+        <div style="font-size:1.5em; font-weight:300;">Denis Vera Iriyari</div>
+        <br>
+        <br>
+        <div>Universidad Politécnica de Catalunya</div>
+        <div>Computer Engineering</div>
+        <br>
+        <div>
+            <a href="mailto:byvera19@gmail.com?subject=Inquiry" target="_blank">Email</a> · 
+            <a href="" target="_blank">CV</a> · 
+            <a href="https://github.com/den1s111" target="_blank">GitHub</a> · 
+            <a href="https://www.linkedin.com/in/denis-vera-iriyari-376300229/" target="_blank">LinkedIn</a>
         </div>
-        <div class="dedicatory">For my brother, my family & my friends</div>
+        <br>
+        <div class="dedicatory">
+            For my brother, my family & my friends
+        </div>
         <div class="scroll-arrow">&#x2193;</div>
     </div>
 </body>
