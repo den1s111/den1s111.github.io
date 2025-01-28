@@ -23,6 +23,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            position: relative;
         }
         a {
             color: #e5e7eb;
@@ -58,13 +59,19 @@
         .projects {
             background-color: #1E1C1A;
             padding: 50px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .project-card {
             background-color: #3A3734;
             padding: 20px;
-            margin: 20px auto;
+            margin: 20px;
             border-radius: 10px;
-            max-width: 600px;
+            max-width: 90%;
+            width: 600px;
+            text-align: left;
         }
     </style>
 </head>
@@ -84,11 +91,11 @@
             </div>
             <br>
             <div class="dedicatory">For my brother, my family & my friends</div>
-            <div class="scroll-arrow">&#x2193;</div>
+            <a href="#projects" class="scroll-arrow">&#x2193;</a>
         </div>
     </section>
     
-    <section class="projects">
+    <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="project-card">
             <h3>Project 1</h3>
