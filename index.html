@@ -16,12 +16,13 @@
             text-align: center;
             margin: 0;
             padding: 0;
+        }
+        .section {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            position: relative;
         }
         a {
             color: #e5e7eb;
@@ -54,27 +55,56 @@
                 transform: translate(-50%, 10px);
             }
         }
+        .projects {
+            background-color: #1E1C1A;
+            padding: 50px 20px;
+        }
+        .project-card {
+            background-color: #3A3734;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 600px;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <div style="font-size:1.5em; font-weight:300;">Denis Vera Iriyari</div>
-        <br>
-        <br>
-        <div>Universidad Politécnica de Catalunya</div>
-        <div>Computer Engineering</div>
-        <br>
+    <section class="section">
         <div>
-            <a href="mailto:byvera19@gmail.com?subject=Inquiry" target="_blank">Email</a> · 
-            <a href="" target="_blank">CV</a> · 
-            <a href="https://github.com/den1s111" target="_blank">GitHub</a> · 
-            <a href="https://www.linkedin.com/in/denis-vera-iriyari-376300229/" target="_blank">LinkedIn</a>
+            <div style="font-size:1.5em; font-weight:300;">Denis Vera Iriyari</div>
+            <br>
+            <div>Universidad Politécnica de Catalunya</div>
+            <div>Computer Engineering</div>
+            <br>
+            <div>
+                <a href="mailto:byvera19@gmail.com?subject=Inquiry" target="_blank">Email</a> · 
+                <a href="" target="_blank">CV</a> · 
+                <a href="https://github.com/den1s111" target="_blank">GitHub</a> · 
+                <a href="https://www.linkedin.com/in/denis-vera-iriyari-376300229/" target="_blank">LinkedIn</a>
+            </div>
+            <br>
+            <div class="dedicatory">For my brother, my family & my friends</div>
+            <div class="scroll-arrow">&#x2193;</div>
         </div>
-        <br>
-        <div class="dedicatory">
-            For my brother, my family & my friends
+    </section>
+    
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Description of the first project goes here.</p>
+            <a href="#">View Project</a>
         </div>
-        <div class="scroll-arrow">&#x2193;</div>
-    </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description of the second project goes here.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Description of the third project goes here.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
 </body>
 </html>
