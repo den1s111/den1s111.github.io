@@ -73,6 +73,22 @@
             width: 600px;
             text-align: left;
         }
+        .video-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-container video {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .caption {
+            font-size: 0.9em;
+            margin-top: 10px;
+            color: #d1d5db;
+        }
     </style>
 </head>
 <body>
@@ -100,27 +116,121 @@
     
     <div class="project-card">
     <h3>FollowTheLeaderTeam - RoboCode</h3>
-    <p><strong>Objectives:</strong> Develop a coordinated team of 5 robots that establish a leader, follow a fixed movement pattern, dynamically adjust roles when members are eliminated, and synchronize attacks on enemies.</p>
-    <p><strong>What I Learned:</strong> Implementing team-based AI behaviors, handling inter-robot communication, designing a leadership election system, optimizing pathfinding and obstacle avoidance, and managing real-time role switching.</p>
-    <p><strong>Technologies Used:</strong> Java, RoboCode API, event handling, radar scanning, mathematical calculations for pathfinding, and onPaint() for debugging visualizations.</p>
-    <a href="#">View Project</a>
-</div>
+    
+    <p><strong>Objectives:</strong></p>
+    <ul>
+        <li>Develop a coordinated team of N robots that establish a leader dynamically.</li>
+        <li>Implement a fixed movement pattern while adapting to battlefield conditions.</li>
+        <li>Ensure role-switching when team members are eliminated.</li>
+        <li>Synchronize team attacks against enemy robots for strategic advantage.</li>
+    </ul>
 
+    <p><strong>What I Learned:</strong></p>
+    <ul>
+        <li>Implementing team-based AI behaviors and inter-robot communication.</li>
+        <li>Designing a leadership election system within a dynamic environment.</li>
+        <li>Optimizing pathfinding, obstacle avoidance, and real-time decision-making.</li>
+        <li>Utilizing debugging visualizations with <code>onPaint()</code>.</li>
+    </ul>
 
-    <div class="project-card">
-        <h3>Project 2</h3>
-        <p><strong>Objectives:</strong> Briefly outline the goals of the project.</p>
-        <p><strong>What I Learned:</strong> Key takeaways or skills gained from working on this project.</p>
-        <p><strong>Technologies Used:</strong> List of tools, frameworks, and programming languages used.</p>
-        <a href="#">View Project</a>
+    <p><strong>Technologies Used:</strong></p>
+    <ul>
+        <li>Java</li>
+        <li>RoboCode API</li>
+        <li>Event Handling</li>
+        <li>Radar Scanning</li>
+        <li>Mathematical Calculations for Pathfinding</li>
+    </ul>
+
+    <a href="https://github.com/den1s111/RoboCode-PROP">View Project</a>
+    
+    <div class="video-container">
+        <video controls>
+            <source src="video/follow_the_leader.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="caption">A demonstration of the RoboCode team working in sync, with a leader robot and coordinated attacks.</div>
+    </div>
     </div>
 
     <div class="project-card">
-        <h3>Project 3</h3>
-        <p><strong>Objectives:</strong> Briefly outline the goals of the project.</p>
-        <p><strong>What I Learned:</strong> Key takeaways or skills gained from working on this project.</p>
-        <p><strong>Technologies Used:</strong> List of tools, frameworks, and programming languages used.</p>
-        <a href="#">View Project</a>
+    <h3>Connect 4 AI Player</h3>
+    <p><strong>Objectives:</strong></p>
+    <ul>
+        <li>Implement the Minimax algorithm with Alpha-Beta pruning for efficient decision-making in Connect Four.</li>
+        <li>Optimize the AI’s move generation by testing against an existing solution provided by the professor.</li>
+        <li>Ensure performance and compatibility within the provided Java-based game framework.</li>
+    </ul>
+
+    <p><strong>What I Learned:</strong></p>
+    <ul>
+        <li>Deepened understanding of game theory through Minimax and Alpha-Beta pruning.</li>
+        <li>Gained experience in AI decision-making and search tree optimization.</li>
+        <li>Enhanced Java programming skills, focusing on algorithm implementation and performance tuning.</li>
+    </ul>
+
+    <p><strong>Technologies Used:</strong></p>
+    <ul>
+        <li>Java</li>
+        <li>Minimax Algorithm</li>
+        <li>Alpha-Beta Pruning</li>
+        <li>Game Theory</li>
+    </ul>
+
+    <a href="https://github.com/den1s111/Connecta4-C4Beast">View Project</a>
+
+    <div class="video-container">
+        <video controls>
+            <source src="video/connect_4_ai.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="caption">An AI player making moves in the game of Connect 4, demonstrating Minimax and Alpha-Beta pruning.</div>
+    </div>
+    </div>
+
+
+    <div class="project-card">
+    <h3>Hex AI Player</h3>
+    
+    <p><strong>Objectives:</strong></p>
+    <ul>
+        <li>Develop an AI player for the game of Hex using the Minimax algorithm with Alpha-Beta pruning.</li>
+        <li>Implement two versions: 
+            <ul>
+                <li><strong>PlayerMinimax</strong>: A player with a configurable search depth.</li>
+                <li><strong>PlayerID</strong>: A player utilizing Iterative Deepening for time-controlled decision-making.</li>
+            </ul>
+        </li>
+        <li>Design an efficient heuristic function based on the distance between opposing sides.</li>
+        <li>Implement a custom version of Dijkstra's algorithm for pathfinding.</li>
+    </ul>
+
+    <p><strong>What I Learned:</strong></p>
+    <ul>
+        <li>Advanced decision-making using Minimax with Alpha-Beta pruning.</li>
+        <li>Iterative Deepening search for handling time constraints in AI.</li>
+        <li>Designing and optimizing heuristic evaluation functions.</li>
+        <li>Implementing a custom pathfinding algorithm (Dijkstra) for game strategy.</li>
+    </ul>
+
+    <p><strong>Technologies Used:</strong></p>
+    <ul>
+        <li>Java</li>
+        <li>Minimax Algorithm</li>
+        <li>Alpha-Beta Pruning</li>
+        <li>Iterative Deepening</li>
+        <li>Custom Dijkstra’s Algorithm</li>
+    </ul>
+
+    <a href="https://github.com/den1s111/HEX-PROP">View Project</a>
+
+    <div class="video-container">
+        <video controls>
+            <source src="video/hex_ai_player.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="caption">A demo of the Hex AI Player in action, showcasing the Minimax algorithm and Iterative Deepening search.</div>
+    </div>
     </div>
 
 </section>
