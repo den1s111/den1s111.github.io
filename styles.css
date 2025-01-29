@@ -3,7 +3,7 @@
     margin-bottom: 30px;
     color: #f8f9fa; /* Brighter for better emphasis */
 }
- 
+
 .project-card {
     background-color: #3A3734;
     padding: 20px;
@@ -45,4 +45,112 @@
     font-size: 1.1em;
     font-weight: bold;
     color: #f8f9fa;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d1d5db;
+}
+
+.dedicatory {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 2px solid #e5e7eb;
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
+
+.about-me {
+    background-color: #3A3734;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    background-color: #1E1C1A;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #3A3734;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 600px;
+    text-align: left;
+}
+
+.video-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.caption {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #d1d5db;
+}
+
+html {
+    scroll-behavior: smooth;
 }
