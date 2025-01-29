@@ -1,0 +1,48 @@
+.projects h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #f8f9fa; /* Brighter for better emphasis */
+}
+
+.project-card {
+    background-color: #3A3734;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 600px;
+    text-align: left;
+    border-left: 5px solid #e5e7eb; /* Adds a subtle highlight */
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ffffff; /* Brighter for title emphasis */
+}
+
+.project-card strong {
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px;
+    color: #e0e0e0; /* Slightly brighter for contrast */
+}
+
+.project-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #b0b0b0; /* Makes text more subtle */
+}
+
+.project-card li {
+    color: #b0b0b0; /* Makes text more subtle */
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #f8f9fa;
+}
