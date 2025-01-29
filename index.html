@@ -17,78 +17,6 @@
             margin: 0;
             padding: 0;
         }
-        .section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-        }
-        a {
-            color: #e5e7eb;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #d1d5db;
-        }
-        .dedicatory {
-            font-size: 0.8em;
-            font-style: italic;
-            margin-top: 30px;
-            padding: 10px;
-            border-top: 2px solid #e5e7eb;
-        }
-        .scroll-arrow {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 2em;
-            animation: bounce 1.5s infinite;
-            cursor: pointer;
-        }
-        @keyframes bounce {
-            0%, 100% {
-                transform: translate(-50%, 0);
-            }
-            50% {
-                transform: translate(-50%, 10px);
-            }
-        }
-        .projects {
-            background-color: #1E1C1A;
-            padding: 50px 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .project-card {
-            background-color: #3A3734;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            max-width: 90%;
-            width: 600px;
-            text-align: left;
-        }
-        .video-container {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .video-container video {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 10px;
-        }
-        .caption {
-            font-size: 0.9em;
-            margin-top: 10px;
-            color: #d1d5db;
-        }
     </style>
 </head>
 <body>
@@ -107,9 +35,21 @@
             </div>
             <br>
             <div class="dedicatory">For my brother, my family & my friends</div>
-            <a href="#projects" class="scroll-arrow">&#x2193;</a>
+            <a href="#about-me" class="scroll-arrow" id="scrollArrow">&#x2193;</a>
+
         </div>
     </section>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>Hi! I'm Denis Vera, a passionate Computer Engineering student at the Universitat Politècnica de Catalunya. With a strong interest in Software Engineering, Full-Stack (mainly back-end) development, and Big Data, I am always eager to learn and develop new skills in cutting-edge technologies. In my spare time, I enjoy exploring new programming challenges and working on interesting projects that allow me to hone my problem-solving abilities.</p>
+    
+        <p>My dedication to continuous learning has led me to explore various technologies, frameworks, and tools, enabling me to adapt and thrive in a fast-paced technological landscape. I am particularly interested in securing an internship, as I believe it would provide me with valuable learning opportunities to further enhance my skills and contribute meaningfully to real-world projects.</p>
+    
+        <p>I believe in the power of collaboration and always look forward to working with like-minded individuals who share my passion for technology and innovation. If you're interested in collaborating or learning more about my work, feel free to reach out!</p>
+    </section>
+
     
     <section id="projects" class="projects">
     <h2>My Projects</h2>
@@ -233,7 +173,7 @@
     </div>
     </div>
 
-</section>
+    </section>
 
 </body>
 </html>
