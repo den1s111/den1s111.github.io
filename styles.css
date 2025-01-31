@@ -4,6 +4,43 @@
     color: #f8f9fa; /* Brighter for better emphasis */
 }
 
+.language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(58, 55, 52, 0.9); /* Matching the project-card background */
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 1000;
+    border: 1px solid rgba(229, 231, 235, 0.1); /* Subtle border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.language-toggle button {
+    background-color: transparent;
+    color: #e5e7eb; /* Matching the link color */
+    border: 1px solid rgba(229, 231, 235, 0.2); /* Subtle border */
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.language-toggle button:hover {
+    background-color: rgba(229, 231, 235, 0.1); /* Light hover effect */
+    border-color: rgba(229, 231, 235, 0.4);
+}
+
+.language-toggle .active {
+    background-color: #4a90e2; /* Accent color for active state */
+    border-color: #4a90e2;
+    color: #fff;
+    cursor: default;
+    box-shadow: 0 2px 4px rgba(74, 144, 226, 0.4); /* Soft glow */
+}
+        
 .project-card {
     background-color: #3A3734;
     padding: 20px;
